@@ -1,15 +1,15 @@
-7570
+7583
 33/home/djolermo/ForkifyApp/LICENSE1658497742158163449 0
 60/home/djolermo/ForkifyApp/notes/forkify-flowchart-part-1.png1644221921000000000 0
-38/home/djolermo/ForkifyApp/package.json1658596074265398380 0
-43/home/djolermo/ForkifyApp/package-lock.json1658596074265398380 0
-53/home/djolermo/ForkifyApp/dist/index.f7626f62.css.map1658596174723829519 0
-49/home/djolermo/ForkifyApp/dist/index.f7626f62.css1658596174715829322 0
-51/home/djolermo/ForkifyApp/dist/favicon.8b2f57bf.png1658596174703829027 0
-49/home/djolermo/ForkifyApp/dist/icons.dfd7a6db.svg1658596174719829420 0
+38/home/djolermo/ForkifyApp/package.json1658666176799589381 0
+43/home/djolermo/ForkifyApp/package-lock.json1658666176795589319 0
+53/home/djolermo/ForkifyApp/dist/index.f7626f62.css.map1658666708412022892 0
+49/home/djolermo/ForkifyApp/dist/index.f7626f62.css1658666708396022633 0
+51/home/djolermo/ForkifyApp/dist/favicon.8b2f57bf.png1658666708484024060 0
+49/home/djolermo/ForkifyApp/dist/icons.dfd7a6db.svg1658666708396022633 0
 52/home/djolermo/ForkifyApp/dist/index.62406edb.js.map1658593659649770997 0
-48/home/djolermo/ForkifyApp/dist/index.e37f48ea.js1658656023807990543 0
-30/home/djolermo/ForkifyApp/dist1658656074205503316 1
+48/home/djolermo/ForkifyApp/dist/index.e37f48ea.js1658666767988986213 0
+30/home/djolermo/ForkifyApp/dist1658666767992986278 1
 35/home/djolermo/ForkifyApp/README.md1658497742158163449 0
 47/home/djolermo/ForkifyApp/src/sass/_recipe.scss1644221921000000000 0
 45/home/djolermo/ForkifyApp/src/sass/_base.scss1644221921000000000 0
@@ -18,8 +18,11 @@
 47/home/djolermo/ForkifyApp/src/sass/_upload.scss1644221921000000000 0
 44/home/djolermo/ForkifyApp/src/sass/main.scss1644221921000000000 0
 34/home/djolermo/ForkifyApp/src/sass1644221921000000000 1
-46/home/djolermo/ForkifyApp/src/js/controller.js1658656023675986581 0
-32/home/djolermo/ForkifyApp/src/js1658581614118945792 1
+41/home/djolermo/ForkifyApp/src/js/model.js1658665988260679095 0
+46/home/djolermo/ForkifyApp/src/js/controller.js1658665560721961232 0
+52/home/djolermo/ForkifyApp/src/js/views/recipeView.js1658666767980986084 0
+38/home/djolermo/ForkifyApp/src/js/views1658658175123411200 1
+32/home/djolermo/ForkifyApp/src/js1658658150722877327 1
 43/home/djolermo/ForkifyApp/src/img/icons.svg1644221921000000000 0
 29/home/djolermo/ForkifyApp/src1644221921000000000 1
 58/home/djolermo/ForkifyApp/node_modules/is-json/.travis.yml1658577815345775619 0
@@ -118,7 +121,6 @@
 69/home/djolermo/ForkifyApp/node_modules/@swc/helpers/src/_ts_param.mjs1658577815889787117 0
 80/home/djolermo/ForkifyApp/node_modules/@swc/helpers/src/_array_without_holes.mjs1658577815777784750 0
 85/home/djolermo/ForkifyApp/node_modules/@swc/helpers/src/_class_private_field_init.mjs1658577815809785426 0
-104/home/djolermo/ForkifyApp/node_modules/@swc/helpers/src/_class_check_private_static_field_descriptor.mjs1658577815801785257 0
 78/home/djolermo/ForkifyApp/node_modules/@swc/helpers/src/_iterable_to_array.mjs1658577815861786525 0
 76/home/djolermo/ForkifyApp/node_modules/@swc/helpers/src/_define_property.mjs1658577815829785849 0
 87/home/djolermo/ForkifyApp/node_modules/@swc/helpers/src/_class_apply_descriptor_set.mjs1658577815797785173 0
@@ -171,6 +173,12 @@
 96/home/djolermo/ForkifyApp/node_modules/@swc/helpers/src/_class_static_private_field_spec_get.mjs1658577815821785680 0
 78/home/djolermo/ForkifyApp/node_modules/@swc/helpers/src/_wrap_native_super.mjs1658577815893787202 0
 68/home/djolermo/ForkifyApp/node_modules/@swc/helpers/scripts/build.sh1658577815769784581 0
+62/home/djolermo/ForkifyApp/node_modules/fractional/package.json1658666176687587658 0
+65/home/djolermo/ForkifyApp/node_modules/fractional/array_mixins.js1658666176691587720 0
+74/home/djolermo/ForkifyApp/node_modules/fractional/releases/fraction-0.1.js1658666176699587843 0
+104/home/djolermo/ForkifyApp/node_modules/@swc/helpers/src/_class_check_private_static_field_descriptor.mjs1658577815801785257 0
+74/home/djolermo/ForkifyApp/node_modules/fractional/releases/fraction-0.2.js1658666176699587843 0
+59/home/djolermo/ForkifyApp/node_modules/fractional/README.md1658666176691587720 0
 68/home/djolermo/ForkifyApp/node_modules/msgpackr-extract/package.json1658577815361775957 0
 64/home/djolermo/ForkifyApp/node_modules/msgpackr-extract/index.js1658577815317775028 0
 110/home/djolermo/ForkifyApp/node_modules/msgpackr-extract/node_modules/node-gyp-build-optional-packages/index.js1658577815309774858 0
@@ -770,6 +778,7 @@
 83/home/djolermo/ForkifyApp/node_modules/core-js/full/string/virtual/code-point-at.js1658596072713361498 0
 73/home/djolermo/ForkifyApp/node_modules/core-js/full/string/virtual/sub.js1658596073813387636 0
 79/home/djolermo/ForkifyApp/node_modules/core-js/full/string/virtual/fontcolor.js1658596073109370906 0
+49/home/djolermo/ForkifyApp/node_modules/fractional1658666176695587781 1
 79/home/djolermo/ForkifyApp/node_modules/core-js/full/string/virtual/trim-left.js1658596073957391058 0
 87/home/djolermo/ForkifyApp/node_modules/@jridgewell/resolve-uri/dist/resolve-uri.mjs.map1658577815309774858 0
 72/home/djolermo/ForkifyApp/node_modules/core-js/es/number/to-precision.js1658596073877389157 0
@@ -893,7 +902,7 @@
 73/home/djolermo/ForkifyApp/node_modules/core-js/modules/es.regexp.flags.js1658596072913366249 0
 74/home/djolermo/ForkifyApp/node_modules/core-js/modules/es.object.create.js1658596072897365869 0
 73/home/djolermo/ForkifyApp/node_modules/core-js/modules/esnext.set.join.js1658596072985367959 0
-48/home/djolermo/ForkifyApp/dist/logo.726d37a8.png1658596174747830109 0
+48/home/djolermo/ForkifyApp/dist/logo.726d37a8.png1658666708436023282 0
 71/home/djolermo/ForkifyApp/node_modules/core-js/modules/es.math.expm1.js1658596072881365488 0
 88/home/djolermo/ForkifyApp/node_modules/core-js/modules/esnext.typed-array.to-reversed.js1658596072997368244 0
 73/home/djolermo/ForkifyApp/node_modules/core-js/modules/esnext.array.at.js1658596072949367104 0
@@ -1125,7 +1134,7 @@
 83/home/djolermo/ForkifyApp/node_modules/core-js/modules/esnext.symbol.replace-all.js1658596072997368244 0
 81/home/djolermo/ForkifyApp/node_modules/core-js/modules/esnext.weak-set.add-all.js1658596073001368339 0
 79/home/djolermo/ForkifyApp/node_modules/core-js/modules/es.symbol.description.js1658596072929366629 0
-49/home/djolermo/ForkifyApp/dist/icons.21bad73c.svg1658596174787831093 0
+49/home/djolermo/ForkifyApp/dist/icons.21bad73c.svg1658666708424023087 0
 74/home/djolermo/ForkifyApp/node_modules/core-js/modules/es.string.repeat.js1658596072925366534 0
 78/home/djolermo/ForkifyApp/node_modules/core-js/modules/es.array.copy-within.js1658596072841364538 0
 81/home/djolermo/ForkifyApp/node_modules/core-js/modules/es.object.lookup-setter.js1658596072901365964 0
@@ -1290,6 +1299,7 @@
 72/home/djolermo/ForkifyApp/node_modules/core-js/features/number/is-nan.js1658596073337376324 0
 77/home/djolermo/ForkifyApp/node_modules/core-js/features/number/constructor.js1658596072753362448 0
 80/home/djolermo/ForkifyApp/node_modules/core-js/features/number/to-exponential.js1658596073853388586 0
+58/home/djolermo/ForkifyApp/node_modules/fractional/index.js1658666176691587720 0
 76/home/djolermo/ForkifyApp/node_modules/core-js/modules/es.symbol.iterator.js1658596072929366629 0
 77/home/djolermo/ForkifyApp/node_modules/core-js/features/number/parse-float.js1658596073569381837 0
 62/home/djolermo/ForkifyApp/node_modules/core-js/features/number1658596073877389157 1
@@ -1556,7 +1566,7 @@
 70/home/djolermo/ForkifyApp/node_modules/core-js/features/async-iterator1658596073845388396 1
 104/home/djolermo/ForkifyApp/node_modules/@msgpackr-extract/msgpackr-extract-linux-x64/node.napi.glibc.node1658577815421777226 0
 83/home/djolermo/ForkifyApp/node_modules/@msgpackr-extract/msgpackr-extract-linux-x641658577815433777479 1
-56/home/djolermo/ForkifyApp/node_modules/@msgpackr-extract1658596074185396478 1
+56/home/djolermo/ForkifyApp/node_modules/@msgpackr-extract1658666176711588027 1
 71/home/djolermo/ForkifyApp/node_modules/postcss-value-parser/lib/walk.js1658577815401776803 0
 72/home/djolermo/ForkifyApp/node_modules/postcss-value-parser/lib/index.js1658577815277774182 0
 71/home/djolermo/ForkifyApp/node_modules/postcss-value-parser/lib/unit.js1658577815365776042 0
@@ -1714,7 +1724,7 @@
 63/home/djolermo/ForkifyApp/node_modules/detect-libc/package.json1658577815225773083 0
 69/home/djolermo/ForkifyApp/node_modules/core-js/full/map/map-values.js1658596073445378890 0
 51/home/djolermo/ForkifyApp/node_modules/@parcel/core1658577816009789653 1
-41/home/djolermo/ForkifyApp/dist/index.html1658656074205503316 0
+41/home/djolermo/ForkifyApp/dist/index.html1658666708352021919 0
 61/home/djolermo/ForkifyApp/node_modules/detect-libc/.npmignore1658577815261773844 0
 54/home/djolermo/ForkifyApp/node_modules/detect-libc/lib1658577815401776803 1
 57/home/djolermo/ForkifyApp/node_modules/msgpackr/pack.d.ts1658577815645781960 0
@@ -2449,7 +2459,7 @@
 75/home/djolermo/ForkifyApp/node_modules/@jridgewell/gen-mapping/src/types.ts1658577815565780269 0
 80/home/djolermo/ForkifyApp/node_modules/@lmdb/lmdb-linux-x64/node.abi83.musl.node1658577815917787709 0
 59/home/djolermo/ForkifyApp/node_modules/@lmdb/lmdb-linux-x641658577815973788892 1
-44/home/djolermo/ForkifyApp/node_modules/@lmdb1658596074185396478 1
+44/home/djolermo/ForkifyApp/node_modules/@lmdb1658666176711588027 1
 85/home/djolermo/ForkifyApp/node_modules/@babel/highlight/node_modules/has-flag/license1658577815285774351 0
 98/home/djolermo/ForkifyApp/node_modules/lmdb/dependencies/lmdb-data-v1/libraries/liblmdb/mdb_dump.c1658577815749784158 0
 65/home/djolermo/ForkifyApp/node_modules/@parcel/graph/src/types.js1658577815589780776 0
@@ -2793,7 +2803,7 @@
 84/home/djolermo/ForkifyApp/node_modules/lmdb/node_modules/node-addon-api/node_api.gyp1658577815265773928 0
 58/home/djolermo/ForkifyApp/node_modules/buffer-from/LICENSE1658577815217772914 0
 68/home/djolermo/ForkifyApp/node_modules/@lezer/common/dist/parse.d.ts1658577815485778578 0
-57/home/djolermo/ForkifyApp/node_modules/.package-lock.json1658596074305399331 0
+57/home/djolermo/ForkifyApp/node_modules/.package-lock.json1658666176843590058 0
 65/home/djolermo/ForkifyApp/node_modules/core-js/es/array/filter.js1658596073033369100 0
 65/home/djolermo/ForkifyApp/node_modules/utility-types/package.json1658577815385776465 0
 78/home/djolermo/ForkifyApp/node_modules/core-js/modules/es.string.trim-start.js1658596072925366534 0
@@ -3560,6 +3570,7 @@
 65/home/djolermo/ForkifyApp/node_modules/@lezer/lr/dist/decode.d.ts1658577815473778325 0
 82/home/djolermo/ForkifyApp/node_modules/core-js/features/async-iterator/for-each.js1658596073113371001 0
 61/home/djolermo/ForkifyApp/node_modules/entities/lib/decode.js1658577815441777648 0
+60/home/djolermo/ForkifyApp/node_modules/fractional/index.html1658666176695587781 0
 52/home/djolermo/ForkifyApp/node_modules/yaml/index.js1658577815525779424 0
 77/home/djolermo/ForkifyApp/node_modules/core-js/internals/set-to-string-tag.js1658596073677384404 0
 60/home/djolermo/ForkifyApp/node_modules/mdn-data/package.json1658577815573780438 0
@@ -3864,6 +3875,7 @@
 110/home/djolermo/ForkifyApp/node_modules/@parcel/node-resolver-core/test/fixture/node_modules/package-alias-glob1658577815953788470 1
 66/home/djolermo/ForkifyApp/node_modules/core-js/actual/math/sign.js1658596073681384499 0
 82/home/djolermo/ForkifyApp/node_modules/caniuse-lite/data/features/css-animation.js1658577815893787202 0
+58/home/djolermo/ForkifyApp/node_modules/fractional/tests.js1658666176695587781 0
 63/home/djolermo/ForkifyApp/node_modules/@mischnic/json-sourcemap1658577815261773844 1
 50/home/djolermo/ForkifyApp/node_modules/ansi-styles1658577815293774520 1
 78/home/djolermo/ForkifyApp/node_modules/caniuse-lite/data/features/vibration.js1658577816125792104 0
@@ -5218,7 +5230,7 @@
 69/home/djolermo/ForkifyApp/node_modules/@parcel/runtime-js/lib/helpers1658577815645781960 1
 86/home/djolermo/ForkifyApp/node_modules/core-js/features/number/virtual/to-precision.js1658596073877389157 0
 86/home/djolermo/ForkifyApp/node_modules/@parcel/watcher/src/shared/BruteForceBackend.hh1658577815613781284 0
-46/home/djolermo/ForkifyApp/node_modules/@parcel1658596074185396478 1
+46/home/djolermo/ForkifyApp/node_modules/@parcel1658666176711588027 1
 56/home/djolermo/ForkifyApp/node_modules/@parcel/types/lib1658577815465778156 1
 85/home/djolermo/ForkifyApp/node_modules/@parcel/transformer-postcss/src/loadPlugins.js1658577815425777310 0
 79/home/djolermo/ForkifyApp/node_modules/core-js/features/object/lookup-getter.js1658596073421378320 0
@@ -5330,7 +5342,7 @@
 37/home/djolermo/ForkifyApp/.prettierrc1658581988912519215 0
 93/home/djolermo/ForkifyApp/node_modules/@parcel/workers/test/integration/workerfarm/ipc-pid.js1658577815569780354 0
 96/home/djolermo/ForkifyApp/node_modules/@parcel/workers/test/integration/workerfarm/master-sum.js1658577815605781115 0
-38/home/djolermo/ForkifyApp/node_modules1658596074185396478 1
+38/home/djolermo/ForkifyApp/node_modules1658666176711588027 1
 90/home/djolermo/ForkifyApp/node_modules/@parcel/workers/test/integration/workerfarm/ping.js1658577815613781284 0
 100/home/djolermo/ForkifyApp/node_modules/@parcel/workers/test/integration/workerfarm/reverse-handle.js1658577815657782214 0
 73/home/djolermo/ForkifyApp/node_modules/core-js/full/instance/to-sorted.js1658596073909389917 0
@@ -5819,6 +5831,7 @@
 74/home/djolermo/ForkifyApp/node_modules/core-js/full/async-iterator/drop.js1658596072809363778 0
 89/home/djolermo/ForkifyApp/node_modules/@parcel/runtime-js/src/helpers/worker/js-loader.js1658577815669782467 0
 88/home/djolermo/ForkifyApp/node_modules/@parcel/runtime-js/src/helpers/node/css-loader.js1658577815569780354 0
+58/home/djolermo/ForkifyApp/node_modules/fractional/releases1658666176699587843 1
 74/home/djolermo/ForkifyApp/node_modules/caniuse-lite/data/regions/alt-af.js1658577815645781960 0
 87/home/djolermo/ForkifyApp/node_modules/@parcel/runtime-js/src/helpers/node/js-loader.js1658577815661782298 0
 84/home/djolermo/ForkifyApp/node_modules/@parcel/runtime-js/src/helpers/.eslintrc.json1658577815713783397 0
@@ -7543,7 +7556,7 @@
 71/home/djolermo/ForkifyApp/node_modules/core-js/features/bigint/range.js1658596073601382598 0
 63/home/djolermo/ForkifyApp/node_modules/core-js/features/atob.js1658596072673360547 0
 62/home/djolermo/ForkifyApp/node_modules/core-js/features/regexp1658596073929390392 1
-52/home/djolermo/ForkifyApp/dist/index.e37f48ea.js.map1658656023811990663 0
+52/home/djolermo/ForkifyApp/dist/index.e37f48ea.js.map1658666767992986278 0
 75/home/djolermo/ForkifyApp/node_modules/core-js/features/regexp/to-string.js1658596073929390392 0
 63/home/djolermo/ForkifyApp/node_modules/nullthrows/nullthrows.js1658577815301774689 0
 77/home/djolermo/ForkifyApp/node_modules/core-js/features/regexp/constructor.js1658596072753362448 0
