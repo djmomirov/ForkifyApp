@@ -8,8 +8,8 @@ export const state = {
   search: {
     query: '',
     results: [],
-    resultsPerPage: RES_PER_PAGE,
     page: 1,
+    resultsPerPage: RES_PER_PAGE,
   },
 };
 
