@@ -18,8 +18,8 @@ class RecipeView extends View {
     this._parentElement.addEventListener('click', function (e) {
       const btn = e.target.closest('.btn--update-servings');
       if (!btn) return;
-      const updateTo = +btn.dataset.updateTo;
-      if (updateTo > 0) handler(updateTo);
+      const { updateTo } = btn.dataset;
+      if (+updateTo > 0) handler(+updateTo);
     });
   }
 
@@ -96,7 +96,7 @@ class RecipeView extends View {
       <div class="recipe__ingredients">
         <h2 class="heading--2">Recipe ingredients</h2>
         <ul class="recipe__ingredient-list">
-        ${this._data.ingredients.map(this._generateMarkupIngredient).join('')}
+          ${this._data.ingredients.map(this._generateMarkupIngredient).join('')}
       </div>
 
       <div class="recipe__directions">
@@ -121,20 +121,21 @@ class RecipeView extends View {
       </div>
     `;
   }
+
   _generateMarkupIngredient(ing) {
     return `
-  <li class="recipe__ingredient">
-    <svg class="recipe__icon">
-      <use href="${icons}#icon-check"></use>
-    </svg>
-    <div class="recipe__quantity">${
-      ing.quantity ? new Fraction(ing.quantity).toString() : ''
-    }</div>
-    <div class="recipe__description">
-      <span class="recipe__unit">${ing.unit}</span>
-      ${ing.description}
-    </div>
-  </li>
+    <li class="recipe__ingredient">
+      <svg class="recipe__icon">
+        <use href="${icons}#icon-check"></use>
+      </svg>
+      <div class="recipe__quantity">${
+        ing.quantity ? new Fraction(ing.quantity).toString() : ''
+      }</div>
+      <div class="recipe__description">
+        <span class="recipe__unit">${ing.unit}</span>
+        ${ing.description}
+      </div>
+    </li>
   `;
   }
 }
