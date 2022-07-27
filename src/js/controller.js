@@ -3,6 +3,7 @@ import recipeView from './views/recipeView.js';
 import searchView from './views/searchView.js';
 import resultsView from './views/resultsView.js';
 import paginationView from './views/paginationView.js';
+import bookmarksView from './views/bookmarksView.js';
 
 import 'core-js/stable';
 import 'regenerator-runtime/runtime';
@@ -20,6 +21,7 @@ const controlRecipes = async function () {
 
     //0) Update results view to mark selection search results
     resultsView.render(model.getSearchResultsPage());
+    bookmarksView.update(model.state.bookmarks);
 
     //1) Loading recipe
     await model.loadRecipe(id);
@@ -33,12 +35,10 @@ const controlRecipes = async function () {
 
 const controlSearchResults = async function () {
   try {
-    console.log('Nalazim se u search results');
     resultsView.renderSpinner();
 
     //1)Get search query
     const query = searchView.getQuery();
-
     if (!query) return;
 
     //2) Load search results
@@ -46,7 +46,7 @@ const controlSearchResults = async function () {
 
     //3)Render results
     // resultsView.render(model.state.search.results);
-    resultsView.render(model.getSearchResultsPage(1));
+    resultsView.render(model.getSearchResultsPage());
 
     //4)Render initial pagination buttons
     paginationView.render(model.state.search);
@@ -72,9 +72,24 @@ const controlServings = function (newServings) {
   recipeView.update(model.state.recipe);
 };
 
+const controlAddBookmark = function () {
+  // 1) Add or remove bookmarks
+  if (!model.state.recipe.bookmarked) {
+    model.addBookmark(model.state.recipe);
+  } else {
+    model.deleteBookmark(model.state.recipe.id);
+  }
+  // 2) Update recipe view
+  recipeView.update(model.state.recipe);
+
+  // 3) REender bookmarks
+  bookmarksView.render(model.state.bookmarks);
+};
+
 const init = function () {
   recipeView.addHandlerREnder(controlRecipes);
   recipeView.addHandlerUpdateServings(controlServings);
+  recipeView.addHandlerAddBookmark(controlAddBookmark);
   searchView.addHandlerSearch(controlSearchResults);
   paginationView.addHandlerClick(controlPagination);
 };
